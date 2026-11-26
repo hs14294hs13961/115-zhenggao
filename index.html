@@ -17,7 +17,12 @@ a{color:var(--main)}button,input,select{font:inherit;color:inherit}
 .wrap{width:var(--w);margin:0 auto}
 header.top{border-bottom:2px solid var(--ink)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
-.brand{font-family:"Noto Serif TC",serif;font-weight:900;text-decoration:none;color:var(--ink)}
+.brand{font-family:"Noto Serif TC",serif;font-weight:900;text-decoration:none;color:var(--ink);font-size:24px;line-height:1.3}
+html[data-fs="s"] :is(header.top,#app,footer){zoom:.9}html[data-fs="l"] :is(header.top,#app,footer){zoom:1.2}html[data-fs="l"] .bottom .btn{font-size:24px}
+@media(max-width:860px){html[data-fs="l"] :is(header.top,#app,footer){zoom:1.12}html[data-fs="l"] .hero h1{white-space:normal}}
+.tools{display:flex;align-items:center;gap:22px}.fs{display:flex;align-items:center;gap:4px;font-size:15px}.fs button{border:0;background:transparent;padding:4px 9px;min-height:36px;cursor:pointer;box-shadow:inset 0 0 0 1px var(--line)}.fs button[aria-pressed=true]{background:var(--ink);color:#fff;box-shadow:none}
+.btn.big{font-size:22px;padding:16px 40px;min-height:62px;background:var(--gold);color:var(--ink)}.btn.big:hover{background:#a6852f}
+.who{margin:14px 0 22px;padding:12px 16px;background:var(--paper);border-left:4px solid var(--gold);font-size:18px}.who b{display:block}
 nav{display:flex;gap:22px}nav a{color:var(--ink);text-decoration:none;font-weight:500;padding:8px 0;border-bottom:3px solid transparent}nav a[aria-current]{border-color:var(--main)}
 .btn{display:inline-block;background:var(--main);color:#fff;border:0;padding:13px 28px;font-weight:700;text-decoration:none;cursor:pointer;min-height:48px}
 .btn:hover{background:#17553a}.btn[disabled]{background:#8b988f;cursor:not-allowed}
@@ -77,21 +82,21 @@ aside{position:sticky;top:20px;background:var(--paper);padding:20px 22px;border-
 .bottom{display:none}.file input[type=file]{position:absolute;width:1px;height:1px;opacity:0}
 .file input[type=file]:focus-visible+span{outline:3px solid var(--gold)}
 [hidden]{display:none!important}
-@media(max-width:860px){.hero .head{grid-template-columns:1fr;gap:18px}.hero h1{font-size:clamp(28px,8.9vw,44px);white-space:nowrap}.hero .head>div>.btn:first-of-type:not(.sec){display:none}.total{text-align:left;display:flex;align-items:baseline;gap:14px}.total .num{font-size:84px}
+@media(max-width:860px){.hero .head{grid-template-columns:1fr;gap:18px}.hero h1{font-size:clamp(28px,8.9vw,44px);white-space:nowrap}.hero .btn.big{display:none}.total{text-align:left;display:flex;align-items:baseline;gap:14px}.total .num{font-size:84px}
  .row{grid-template-columns:repeat(5,1fr);gap:8px}.row h2{grid-column:1/-1;font-size:24px}.pile{height:120px}.sheet{height:34px;background-size:auto}.stack .lab{display:block;font-size:14px;letter-spacing:-.02em;white-space:nowrap;line-height:1.35}.stack .lab .num{display:block;font-size:24px}.stack .lab i{display:none}
  .facts,.sec2,.cols,.g{grid-template-columns:1fr}.facts div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}.facts div{padding:20px 0}.sec2{padding:44px 0;gap:20px}aside{position:static}
  .home .bottom{display:block;position:fixed;inset:auto 0 0;background:var(--bg);padding:10px 20px calc(10px + env(safe-area-inset-bottom));border-top:2px solid var(--ink);z-index:5}.bottom .btn{display:block;text-align:center}
- .brand span{display:none}nav{gap:16px}.hero{padding-top:30px}.file{grid-template-columns:1fr}
+ .brand{font-size:20px}.brand span{display:none}nav{gap:14px}.tools{gap:12px;flex-wrap:wrap;justify-content:flex-end}.fs span{display:none}.hero{padding-top:30px}.file{grid-template-columns:1fr}
  table.t,table.t tbody,table.t tr,table.t td{display:block}table.t thead{display:none}table.t td{border:0;padding:2px 0}table.t tr{border-top:1px solid var(--line);display:block;padding:12px 0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a class="brand" href="#/"><span>新竹縣115學年度</span>素養評量徵稿</a>
-<nav aria-label="主選單"><a href="#/">首頁</a><a href="#/submit">投稿</a><a href="#/fix">補件查詢</a></nav></div></header>
+<div class="tools"><nav aria-label="主選單"><a href="#/">首頁</a><a href="#/submit">投稿</a><a href="#/fix">補件查詢</a></nav><div class="fs" role="group" aria-label="字級"><span>字級</span><button type="button" data-fs="s">小</button><button type="button" data-fs="m">標準</button><button type="button" data-fs="l">大</button></div></div></div></header>
 <main id="app" tabindex="-1" style="outline:0"></main>
-<footer><div class="wrap"><p>主辦：新竹縣政府教育局　承辦：新竹縣關西鎮太平國民小學</p><p id="contact"></p></div></footer>
-<div class="bottom"><a class="btn" href="#/submit">前往投稿</a></div>
+<footer><div class="wrap"><p>主辦：新竹縣政府教育局</p><p>承辦：新竹縣關西鎮太平國民小學　承辦人 莊紹群　電話 03-5882634 分機 12　電子郵件 <a href="mailto:hs14294@go.edu.tw">hs14294@go.edu.tw</a></p></div></footer>
+<div class="bottom"><a class="btn big" href="#/submit">我要投稿 →</a></div>
 <script src="config.js"></script>
 <script>
 'use strict';
@@ -112,7 +117,7 @@ async function api(a,data={},tries=4){
   }
 }
 function fakeCfg(){return{state:'未開放',deadline:'116年3月中（依公文）',stats:{total:0,g:{},time:''},schools:{國小:[],國中:[]},links:[],contact:'',privacy:'',pageLimit:6,offline:1}}
-async function load(){try{if(!window.API_URL)throw 0;CFG=await api('config')}catch{CFG=fakeCfg()}$('#contact').textContent=CFG.contact||'';}
+async function load(){try{if(!window.API_URL)throw 0;CFG=await api('config')}catch{CFG=fakeCfg()}}
 /* ---------- 首頁 ---------- */
 function pile(n,anim){const c=n?Math.min(22,Math.max(1,Math.round(n<=12?n:12+(n-12)/3))):0;let h='';const step=matchMedia('(max-width:860px)').matches?3.6:4.8;
   for(let i=0;i<c;i++)h+=`<span class="sheet ${anim?'in':''}" style="bottom:${(i*step).toFixed(1)}px;--r:${(((i*37)%7)-3)*.55}deg;--d:${i*35}ms"></span>`;return h}
@@ -121,7 +126,7 @@ function home(){
   const s=CFG.stats,open=CFG.state==='收件中',fix=CFG.state==='已截止'&&CFG.supplement;
   const st=CFG.offline?'目前無法連線，請稍後重新整理。':open?'收件中':fix?'已截止，僅開放補件':CFG.state==='已截止'?'已截止收件':'尚未開放';
   $('#app').innerHTML=`<section class="hero"><div class="wrap head"><div><h1><span>新竹縣115學年度</span>素養導向多元評量徵稿</h1>
-  <p>國小、國中各五個領域。每一件作品，都是這裡的一張稿紙。</p>${open?'<a class="btn" href="#/submit">前往投稿</a> ':''}<a class="btn sec" href="#/fix">補件查詢</a></div>
+  <p>國小、國中各五個領域。每一件作品，都是這裡的一張稿紙。</p><div class="who"><b>可由作者本人，或教學組長代全校老師上傳。</b>請逐位填寫學校與姓名。</div><a class="btn big" href="#/submit">我要投稿 →</a><a class="btn sec" href="#/fix">補件查詢</a></div>
   <div class="total" aria-live="polite"><div class="num">${s.total}</div><small>件已完成收件${s.time?'<br>更新 '+esc(s.time.slice(5,16)):''}</small></div></div>
   <div class="desk"><div class="wrap">${LV.map(row).join('')}</div></div></section>
   <div class="wrap facts"><div><span class="num">${esc(CFG.deadline)}</span>收件截止</div><div><span class="num">${st}</span>目前狀態</div><div><span class="num">四個檔案</span>每件作品都要備齊</div></div>
@@ -143,7 +148,7 @@ function side(){return `<aside><h2>本次上傳清單</h2>${LIST.length?`<ol>${L
 function submit(){
   if(CFG.state!=='收件中'){$('#app').innerHTML=`<div class="page"><div class="wrap"><h1>${CFG.state==='已截止'?'收件已截止':'尚未開放投稿'}</h1><p>${CFG.offline?'目前無法連線，請稍後重新整理。':'收件截止：'+esc(CFG.deadline)}</p></div></div>`;return}
   const c=CUR,w=c.work;
-  $('#app').innerHTML=`<div class="page"><div class="wrap"><h1>${c.made?'上傳檔案':'我要投稿'}</h1><div class="cols"><div>${c.made?filesHtml():`<form novalidate>
+  $('#app').innerHTML=`<div class="page"><div class="wrap"><h1>${c.made?'上傳檔案':'我要投稿'}</h1>${c.made?'':'<div class="who"><b>可由作者本人，或教學組長代全校老師上傳。</b>請逐位填寫學校與姓名。</div>'}<div class="cols"><div>${c.made?filesHtml():`<form novalidate>
   <fieldset><legend>上傳者（只填一次）</legend><div class="g">${inp('upl.name','姓名',UPL.name,'autocomplete="name"')}${inp('upl.email','電子郵件',UPL.email,'type="email" autocomplete="email"')}${school('upl.school',UPL.school)}${inp('upl.title','職稱',UPL.title,'',0)}${inp('upl.phone','電話',UPL.phone,'type="tel" autocomplete="tel"')}</div></fieldset>
   <fieldset><legend>作品</legend><div class="g"><label class="f">學制 <em>必填</em><select data-k="work.level">${opt(LV,w.level,'請選擇')}</select></label><label class="f">領域 <em>必填</em><select data-k="work.domain">${opt(D,w.domain,'請選擇')}</select></label><label class="f">適用年級 <em>必填</em><select data-k="work.grade">${opt(w.level==='國中'?['七年級','八年級','九年級','跨年級']:['一年級','二年級','三年級','四年級','五年級','六年級','跨年級'],w.grade,'請選擇')}</select></label><div class="f1">${inp('work.title','作品名稱',w.title,'maxlength="80"')}</div></div></fieldset>
   <fieldset><legend>作者（獲獎人）</legend><label class="ck"><input type="checkbox" data-self ${c.self?'checked':''}>上傳者就是第一作者</label>${authorsHtml(c.authors,w.level,c.self)}</fieldset>
@@ -260,6 +265,9 @@ addEventListener('submit',async e=>{e.preventDefault();const f=e.target;
   if(f.id==='ver'){try{const r=await api('verify',{email:FIX.email,code:f.code.value.trim()});FIX={sess:r.sess,works:r.works};store.set('fix',{sess:r.sess});fixList()}catch(er){showErr(f,er.message)}return}
   doCreate(f);
 });
+function setFs(v){document.documentElement.dataset.fs=v;document.querySelectorAll('.fs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.fs===v));try{localStorage.setItem('fs',v)}catch{}}
+document.querySelector('.fs').addEventListener('click',e=>{const b=e.target.closest('[data-fs]');if(b)setFs(b.dataset.fs)});
+{let v='m';try{v=localStorage.getItem('fs')||'m'}catch{}setFs(v)}
 addEventListener('hashchange',route);
 $('#app').innerHTML='<div class="page"><div class="wrap"><p>載入中</p></div></div>';
 load().then(()=>{route();setInterval(async()=>{if(document.hidden||location.hash.replace(/^#\/?/,'')||!window.API_URL)return;try{const s=await api('stats',{},1);if(s.total!==CFG.stats.total){CFG.stats=s;home()}}catch{}},60000)});
