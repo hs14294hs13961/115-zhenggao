@@ -22,7 +22,7 @@ html[data-fs="s"] :is(header.top,#app,footer){zoom:.9}html[data-fs="l"] :is(head
 @media(max-width:860px){html[data-fs="l"] :is(header.top,#app,footer){zoom:1.12}html[data-fs="l"] .hero h1{white-space:normal}}
 .tools{display:flex;align-items:center;gap:22px}.fs{display:flex;align-items:center;gap:4px;font-size:15px}.fs button{border:0;background:transparent;padding:4px 9px;min-height:36px;cursor:pointer;box-shadow:inset 0 0 0 1px var(--line)}.fs button[aria-pressed=true]{background:var(--ink);color:#fff;box-shadow:none}
 .btn.big{font-size:22px;padding:16px 40px;min-height:62px;background:var(--gold);color:var(--ink)}.btn.big:hover{background:#a6852f}
-.who{margin:14px 0 22px;padding:12px 16px;background:var(--paper);border-left:4px solid var(--gold);font-size:18px}.who b{display:block}
+.hero .ref{margin:14px 0 0;font-size:18px;font-weight:700}
 nav{display:flex;gap:22px}nav a{color:var(--ink);text-decoration:none;font-weight:500;padding:8px 0;border-bottom:3px solid transparent}nav a[aria-current]{border-color:var(--main)}
 .btn{display:inline-block;background:var(--main);color:#fff;border:0;padding:13px 28px;font-weight:700;text-decoration:none;cursor:pointer;min-height:48px}
 .btn:hover{background:#17553a}.btn[disabled]{background:#8b988f;cursor:not-allowed}
@@ -62,7 +62,7 @@ ol.steps{margin:0;padding:0;list-style:none;counter-reset:s}ol.steps li{counter-
 ol.steps li::before{content:counter(s);font:900 34px/1.2 "Noto Serif TC",serif;color:var(--main)}ol.steps b{display:block;font-size:19px}
 table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px 14px 12px 0;border-top:1px solid var(--line);vertical-align:top}thead th{border:0}
 details{border-top:1px solid var(--line);padding:14px 0}details:first-of-type{border:0;padding-top:0}summary{cursor:pointer;font-weight:700;font-size:19px}
-footer{background:var(--ink);color:#EEF1EC;padding:36px 0 110px}footer a{color:#EEF1EC}
+footer{background:var(--ink);color:#EEF1EC;padding:18px 0 22px;font-size:16px}footer p{margin:2px 0}footer a{color:#EEF1EC}
 /* 表單 */
 .page{padding:44px 0 90px}.page>.wrap>h1{font-size:clamp(30px,4vw,46px);margin-bottom:8px}
 .cols{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;margin-top:28px}
@@ -85,7 +85,7 @@ aside{position:sticky;top:20px;background:var(--paper);padding:20px 22px;border-
 @media(max-width:860px){.hero .head{grid-template-columns:1fr;gap:18px}.hero h1{font-size:clamp(28px,8.9vw,44px);white-space:nowrap}.hero .btn.big{display:none}.total{text-align:left;display:flex;align-items:baseline;gap:14px}.total .num{font-size:84px}
  .row{grid-template-columns:repeat(5,1fr);gap:8px}.row h2{grid-column:1/-1;font-size:24px}.pile{height:120px}.sheet{height:34px;background-size:auto}.stack .lab{display:block;font-size:14px;letter-spacing:-.02em;white-space:nowrap;line-height:1.35}.stack .lab .num{display:block;font-size:24px}.stack .lab i{display:none}
  .facts,.sec2,.cols,.g{grid-template-columns:1fr}.facts div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}.facts div{padding:20px 0}.sec2{padding:44px 0;gap:20px}aside{position:static}
- .home .bottom{display:block;position:fixed;inset:auto 0 0;background:var(--bg);padding:10px 20px calc(10px + env(safe-area-inset-bottom));border-top:2px solid var(--ink);z-index:5}.bottom .btn{display:block;text-align:center}
+ .home footer{padding-bottom:96px}nav a[target]{display:none}.home .bottom{display:block;position:fixed;inset:auto 0 0;background:var(--bg);padding:10px 20px calc(10px + env(safe-area-inset-bottom));border-top:2px solid var(--ink);z-index:5}.bottom .btn{display:block;text-align:center}
  .brand{font-size:20px}.brand span{display:none}nav{gap:14px}.tools{gap:12px;flex-wrap:wrap;justify-content:flex-end}.fs span{display:none}.hero{padding-top:30px}.file{grid-template-columns:1fr}
  table.t,table.t tbody,table.t tr,table.t td{display:block}table.t thead{display:none}table.t td{border:0;padding:2px 0}table.t tr{border-top:1px solid var(--line);display:block;padding:12px 0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
@@ -93,9 +93,9 @@ aside{position:sticky;top:20px;background:var(--paper);padding:20px 22px;border-
 </head>
 <body>
 <header class="top"><div class="wrap"><a class="brand" href="#/"><span>新竹縣115學年度</span>素養評量徵稿</a>
-<div class="tools"><nav aria-label="主選單"><a href="#/">首頁</a><a href="#/submit">投稿</a><a href="#/fix">補件查詢</a></nav><div class="fs" role="group" aria-label="字級"><span>字級</span><button type="button" data-fs="s">小</button><button type="button" data-fs="m">標準</button><button type="button" data-fs="l">大</button></div></div></div></header>
+<div class="tools"><nav aria-label="主選單"><a href="#/">首頁</a><a href="#/submit">投稿</a><a href="#/fix">補件查詢</a><a href="https://sites.google.com/view/hcc-teaching/%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E5%BE%B5%E7%A8%BF" target="_blank" rel="noopener">歷年得獎作品</a></nav><div class="fs" role="group" aria-label="字級"><span>字級</span><button type="button" data-fs="s">小</button><button type="button" data-fs="m">標準</button><button type="button" data-fs="l">大</button></div></div></div></header>
 <main id="app" tabindex="-1" style="outline:0"></main>
-<footer><div class="wrap"><p>主辦：新竹縣政府教育局</p><p>承辦：新竹縣關西鎮太平國民小學　承辦人 莊紹群　電話 03-5882634 分機 12　電子郵件 <a href="mailto:hs14294@go.edu.tw">hs14294@go.edu.tw</a></p></div></footer>
+<footer><div class="wrap"><p>主辦：新竹縣政府教育局</p><p>承辦：新竹縣關西鎮太平國民小學</p><p>承辦人 莊紹群　電話 03-5882634 分機 12　電子郵件 <a href="mailto:hs14294@go.edu.tw">hs14294@go.edu.tw</a></p></div></footer>
 <div class="bottom"><a class="btn big" href="#/submit">我要投稿 →</a></div>
 <script src="config.js"></script>
 <script>
@@ -126,11 +126,11 @@ function home(){
   const s=CFG.stats,open=CFG.state==='收件中',fix=CFG.state==='已截止'&&CFG.supplement;
   const st=CFG.offline?'目前無法連線，請稍後重新整理。':open?'收件中':fix?'已截止，僅開放補件':CFG.state==='已截止'?'已截止收件':'尚未開放';
   $('#app').innerHTML=`<section class="hero"><div class="wrap head"><div><h1><span>新竹縣115學年度</span>素養導向多元評量徵稿</h1>
-  <p>國小、國中各五個領域。每一件作品，都是這裡的一張稿紙。</p><div class="who"><b>可由作者本人，或教學組長代全校老師上傳。</b>請逐位填寫學校與姓名。</div><a class="btn big" href="#/submit">我要投稿 →</a><a class="btn sec" href="#/fix">補件查詢</a></div>
+  <a class="btn big" href="#/submit">我要投稿 →</a><a class="btn sec" href="#/fix">補件查詢</a><p class="ref"><a href="https://sites.google.com/view/hcc-teaching/%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E5%BE%B5%E7%A8%BF" target="_blank" rel="noopener">歷年得獎作品參考 ↗</a></p></div>
   <div class="total" aria-live="polite"><div class="num">${s.total}</div><small>件已完成收件${s.time?'<br>更新 '+esc(s.time.slice(5,16)):''}</small></div></div>
   <div class="desk"><div class="wrap">${LV.map(row).join('')}</div></div></section>
   <div class="wrap facts"><div><span class="num">${esc(CFG.deadline)}</span>收件截止</div><div><span class="num">${st}</span>目前狀態</div><div><span class="num">四個檔案</span>每件作品都要備齊</div></div>
-  <div class="wrap"><section class="sec2"><h2>投稿步驟</h2><ol class="steps"><li><div><b>填上傳者資料</b>可由作者本人，或教學組長代全校老師上傳，只填一次。</div></li><li><div><b>填作品與作者</b>作者才是獲獎人，請逐位填寫學校與姓名。</div></li><li><div><b>逐一上傳四個檔案</b>看得到進度；斷線會自動接續，不用重來。</div></li><li><div><b>確認送出，保存收件編號</b>完成後寄確認信給上傳者。</div></li></ol></section>
+  <div class="wrap"><section class="sec2"><h2>投稿步驟</h2><ol class="steps"><li><div><b>填上傳者資料</b>可由作者本人，或教學組長代全校老師上傳。</div></li><li><div><b>填作品與作者</b>請逐位填寫學校與姓名。</div></li><li><div><b>逐一上傳四個檔案</b>看得到進度；斷線會自動接續，不用重來。</div></li><li><div><b>確認送出，保存收件編號</b>完成後寄確認信給上傳者。</div></li></ol></section>
   <section class="sec2"><h2>應備檔案</h2><div><table class="t"><thead><tr><th>檔案</th><th>格式</th><th>注意</th></tr></thead><tbody>${Object.values(K).map(k=>`<tr><td><b>${k[0].replace(/（.*/,'')}</b></td><td>${k[1].replace(/\./g,'').toUpperCase().replace(/,/g,'、')}</td><td>${k[2]}</td></tr>`).join('')}</tbody></table><p>單檔上限 50MB。${CFG.links.length?'表件下載：'+CFG.links.map(x=>`<a href="${/^https:/.test(x.u)?esc(x.u):'#'}" target="_blank" rel="noopener">${esc(x.n)}</a>`).join('、'):''}</p></div></section>
   <section class="sec2"><h2>常見問題</h2><div><details><summary>我是教學組長，要幫好幾位老師上傳</summary><p>上傳者填您自己，每件作品的作者填老師本人。送出一件後按「再新增一件」，您的資料會留著，作者與檔案會清空。</p></details><details><summary>上傳到一半斷線了</summary><p>網路恢復後會自動從中斷處接續。若已關閉網頁，請用「補件查詢」重新驗證後補傳。</p></details><details><summary>送出後想換檔或改作者</summary><p>用「補件查詢」輸入上傳者電子郵件與收件編號，收驗證碼後即可修改，舊檔會保留備查。</p></details><details><summary>評審會看到姓名和學校嗎</summary><p>不會。收件截止後由承辦單位去識別化並重新編號，評審只看得到審查編號。</p></details></div></section></div>`;
 }
@@ -148,7 +148,7 @@ function side(){return `<aside><h2>本次上傳清單</h2>${LIST.length?`<ol>${L
 function submit(){
   if(CFG.state!=='收件中'){$('#app').innerHTML=`<div class="page"><div class="wrap"><h1>${CFG.state==='已截止'?'收件已截止':'尚未開放投稿'}</h1><p>${CFG.offline?'目前無法連線，請稍後重新整理。':'收件截止：'+esc(CFG.deadline)}</p></div></div>`;return}
   const c=CUR,w=c.work;
-  $('#app').innerHTML=`<div class="page"><div class="wrap"><h1>${c.made?'上傳檔案':'我要投稿'}</h1>${c.made?'':'<div class="who"><b>可由作者本人，或教學組長代全校老師上傳。</b>請逐位填寫學校與姓名。</div>'}<div class="cols"><div>${c.made?filesHtml():`<form novalidate>
+  $('#app').innerHTML=`<div class="page"><div class="wrap"><h1>${c.made?'上傳檔案':'我要投稿'}</h1><div class="cols"><div>${c.made?filesHtml():`<form novalidate>
   <fieldset><legend>上傳者（只填一次）</legend><div class="g">${inp('upl.name','姓名',UPL.name,'autocomplete="name"')}${inp('upl.email','電子郵件',UPL.email,'type="email" autocomplete="email"')}${school('upl.school',UPL.school)}${inp('upl.title','職稱',UPL.title,'',0)}${inp('upl.phone','電話',UPL.phone,'type="tel" autocomplete="tel"')}</div></fieldset>
   <fieldset><legend>作品</legend><div class="g"><label class="f">學制 <em>必填</em><select data-k="work.level">${opt(LV,w.level,'請選擇')}</select></label><label class="f">領域 <em>必填</em><select data-k="work.domain">${opt(D,w.domain,'請選擇')}</select></label><label class="f">適用年級 <em>必填</em><select data-k="work.grade">${opt(w.level==='國中'?['七年級','八年級','九年級','跨年級']:['一年級','二年級','三年級','四年級','五年級','六年級','跨年級'],w.grade,'請選擇')}</select></label><div class="f1">${inp('work.title','作品名稱',w.title,'maxlength="80"')}</div></div></fieldset>
   <fieldset><legend>作者（獲獎人）</legend><label class="ck"><input type="checkbox" data-self ${c.self?'checked':''}>上傳者就是第一作者</label>${authorsHtml(c.authors,w.level,c.self)}</fieldset>
