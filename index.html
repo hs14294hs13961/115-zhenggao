@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>新竹縣115學年度素養導向多元評量徵稿</title>
+<meta name="description" content="新竹縣國民中小學教師素養導向多元評量徵稿，線上投稿與補件。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E7EAE6;--ink:#1F2A25;--main:#1F6B4A;--gold:#B8963E;--paper:#FBFBF7;--line:#B9C6BD;--soft:#D6DED8;--bad:#9B2C1F;--w:min(1180px,100% - 40px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+h1,h2,h3,.num{font-family:"Noto Serif TC","Songti TC",PMingLiU,serif;line-height:1.3;margin:0;font-weight:900}
+a{color:var(--main)}button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{width:var(--w);margin:0 auto}
+header.top{border-bottom:2px solid var(--ink)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{font-family:"Noto Serif TC",serif;font-weight:900;text-decoration:none;color:var(--ink)}
+nav{display:flex;gap:22px}nav a{color:var(--ink);text-decoration:none;font-weight:500;padding:8px 0;border-bottom:3px solid transparent}nav a[aria-current]{border-color:var(--main)}
+.btn{display:inline-block;background:var(--main);color:#fff;border:0;padding:13px 28px;font-weight:700;text-decoration:none;cursor:pointer;min-height:48px}
+.btn:hover{background:#17553a}.btn[disabled]{background:#8b988f;cursor:not-allowed}
+.btn.sec{background:transparent;color:var(--main);box-shadow:inset 0 0 0 2px var(--main)}.btn.sec:hover{background:var(--soft)}
+.btn.sm{padding:6px 16px;min-height:40px;font-size:16px}
+.link{background:none;border:0;color:var(--main);text-decoration:underline;cursor:pointer;padding:8px 0}
+/* 首屏 */
+.hero{padding:36px 0 0}.hero .btn{margin-right:8px}
+.hero .head{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+.hero h1{font-size:clamp(34px,4.6vw,60px);letter-spacing:.01em}
+.hero h1 span{display:block;font-size:.5em;font-weight:600;margin-bottom:10px}
+.hero p{margin:12px 0 20px;max-width:34em}
+.total{text-align:right}.total .num{font-size:clamp(84px,12vw,168px);line-height:.9;color:var(--gold)}
+.total small{display:block;font-size:17px;margin-top:10px}
+.desk{margin-top:26px;background:var(--soft);border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:88px repeat(5,1fr);gap:22px;align-items:end;padding:10px 0 16px}
+.row+.row{border-top:1px solid var(--line)}
+.row h2{font-size:30px;align-self:end;padding-bottom:2px}
+.stack{background:none;border:0;padding:0;text-align:left;cursor:pointer;display:block;width:100%}
+.stack[disabled]{cursor:default}
+.pile{position:relative;height:164px;display:block}
+.sheet{position:absolute;left:0;right:0;height:56px;background-color:var(--paper);border:1px solid #8fa598;
+ background-image:repeating-linear-gradient(90deg,transparent 0 13px,#a9c1b2 13px 14px),repeating-linear-gradient(0deg,transparent 0 13px,#a9c1b2 13px 14px);
+ transform-origin:50% 100%;transform:perspective(420px) rotateX(52deg) rotate(var(--r));box-shadow:0 2px 1px rgba(31,42,37,.22)}
+.sheet.in{animation:drop .5s cubic-bezier(.2,.8,.3,1) both;animation-delay:var(--d)}
+@keyframes drop{from{opacity:0;translate:0 -46px}}
+.stack .lab{display:flex;justify-content:space-between;align-items:baseline;border-top:3px solid var(--main);padding-top:8px;font-weight:700}
+.stack .lab .num{font-size:28px}.stack .lab i{font-style:normal;font-weight:400;font-size:16px}
+.stack:not([disabled]):hover .lab{border-color:var(--gold)}
+/* 資訊 */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:2px solid var(--ink)}
+.facts div{padding:30px 28px 30px 0}.facts div+div{padding-left:28px;border-left:1px solid var(--line)}
+.facts .num{font-size:34px;display:block;margin-bottom:6px}
+.sec2{padding:64px 0;display:grid;grid-template-columns:minmax(200px,1fr) 2.4fr;gap:40px}
+.sec2+.sec2{border-top:1px solid var(--line)}.sec2 h2{font-size:34px}
+ol.steps{margin:0;padding:0;list-style:none;counter-reset:s}ol.steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;padding:16px 0;border-top:1px solid var(--line)}ol.steps li:first-child{border:0;padding-top:0}
+ol.steps li::before{content:counter(s);font:900 34px/1.2 "Noto Serif TC",serif;color:var(--main)}ol.steps b{display:block;font-size:19px}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px 14px 12px 0;border-top:1px solid var(--line);vertical-align:top}thead th{border:0}
+details{border-top:1px solid var(--line);padding:14px 0}details:first-of-type{border:0;padding-top:0}summary{cursor:pointer;font-weight:700;font-size:19px}
+footer{background:var(--ink);color:#EEF1EC;padding:36px 0 110px}footer a{color:#EEF1EC}
+/* 表單 */
+.page{padding:44px 0 90px}.page>.wrap>h1{font-size:clamp(30px,4vw,46px);margin-bottom:8px}
+.cols{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;margin-top:28px}
+fieldset{border:0;border-top:2px solid var(--ink);margin:0 0 34px;padding:20px 0 0;min-width:0}legend{float:left;width:100%;font:900 25px/1.3 "Noto Serif TC",serif;margin-bottom:14px}legend+*{clear:both}
+.g{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 20px}.g .f1{grid-column:1/-1}
+label.f{display:block;font-weight:500}label.f input,label.f select{display:block;width:100%;margin-top:5px;padding:11px 12px;border:1px solid #7f9187;background:var(--paper);min-height:48px;border-radius:0}
+label.f em{font-style:normal;color:var(--bad)}[aria-invalid=true]{border:2px solid var(--bad)!important}
+.ck{display:flex;gap:10px;align-items:flex-start;margin:14px 0}.ck input{width:22px;height:22px;margin-top:4px;flex:none;accent-color:var(--main)}
+.author{background:var(--soft);padding:16px 18px 20px;margin-bottom:14px}.author header{display:flex;justify-content:space-between;align-items:center;font-weight:700;margin-bottom:8px}
+.file{display:grid;grid-template-columns:1fr auto;gap:8px 18px;align-items:center;border-top:1px solid var(--line);padding:18px 0}.file:first-of-type{border:0}
+.file b{display:block}.file small{font-size:16px}.file .bar{grid-column:1/-1;height:10px;background:var(--soft)}.file .bar i{display:block;height:100%;width:0;background:var(--main);transition:width .2s}
+.file .msg{grid-column:1/-1}.ok{color:var(--main);font-weight:700}.bad{color:var(--bad);font-weight:700}
+.warn{background:#F3E9CC;padding:12px 16px;margin:10px 0}.note{background:var(--soft);padding:14px 18px;margin:0 0 20px}
+aside{position:sticky;top:20px;background:var(--paper);padding:20px 22px;border-top:6px solid var(--gold)}aside h2{font-size:22px;margin-bottom:10px}aside ol{margin:0;padding:0;list-style:none}aside li{border-top:1px solid var(--line);padding:12px 0}aside li .st{float:right;font-weight:700}
+.idno{font:900 clamp(34px,5vw,52px)/1.2 "Noto Serif TC",serif;color:var(--main);letter-spacing:.04em}
+.err{color:var(--bad);font-weight:700;margin:12px 0}
+.bottom{display:none}.file input[type=file]{position:absolute;width:1px;height:1px;opacity:0}
+.file input[type=file]:focus-visible+span{outline:3px solid var(--gold)}
+[hidden]{display:none!important}
+@media(max-width:860px){.hero .head{grid-template-columns:1fr;gap:18px}.hero h1{font-size:clamp(28px,8.9vw,44px);white-space:nowrap}.hero .head>div>.btn:first-of-type:not(.sec){display:none}.total{text-align:left;display:flex;align-items:baseline;gap:14px}.total .num{font-size:84px}
+ .row{grid-template-columns:repeat(5,1fr);gap:8px}.row h2{grid-column:1/-1;font-size:24px}.pile{height:120px}.sheet{height:34px;background-size:auto}.stack .lab{display:block;font-size:14px;letter-spacing:-.02em;white-space:nowrap;line-height:1.35}.stack .lab .num{display:block;font-size:24px}.stack .lab i{display:none}
+ .facts,.sec2,.cols,.g{grid-template-columns:1fr}.facts div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}.facts div{padding:20px 0}.sec2{padding:44px 0;gap:20px}aside{position:static}
+ .home .bottom{display:block;position:fixed;inset:auto 0 0;background:var(--bg);padding:10px 20px calc(10px + env(safe-area-inset-bottom));border-top:2px solid var(--ink);z-index:5}.bottom .btn{display:block;text-align:center}
+ .brand span{display:none}nav{gap:16px}.hero{padding-top:30px}.file{grid-template-columns:1fr}
+ table.t,table.t tbody,table.t tr,table.t td{display:block}table.t thead{display:none}table.t td{border:0;padding:2px 0}table.t tr{border-top:1px solid var(--line);display:block;padding:12px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="#/"><span>新竹縣115學年度</span>素養評量徵稿</a>
+<nav aria-label="主選單"><a href="#/">首頁</a><a href="#/submit">投稿</a><a href="#/fix">補件查詢</a></nav></div></header>
+<main id="app" tabindex="-1" style="outline:0"></main>
+<footer><div class="wrap"><p>主辦：新竹縣政府教育局　承辦：新竹縣關西鎮太平國民小學</p><p id="contact"></p></div></footer>
+<div class="bottom"><a class="btn" href="#/submit">前往投稿</a></div>
+<script src="config.js"></script>
+<script>
+'use strict';
+const D=['國語文','數學','英語文','自然科學','社會'],LV=['國小','國中'];
+const K={doc:['試題說明表（Word 或 ODT）','.docx,.doc,.odt','說明表的可編輯檔'],pdf:['試題說明表（PDF）','.pdf','與上一份內容相同，不可併入授權書或切結書'],auth:['授權書（PDF）','.pdf','共同作者合併成一個 PDF'],pledge:['切結書（PDF）','.pdf','共同作者合併成一個 PDF']};
+const $=(s,e=document)=>e.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sleep=ms=>new Promise(r=>setTimeout(r,ms)),uid=()=>crypto.randomUUID?crypto.randomUUID():[...crypto.getRandomValues(new Uint8Array(16))].map(b=>b.toString(16).padStart(2,'0')).join('');
+const store={get(k,d){try{return JSON.parse(sessionStorage.getItem(k))??d}catch{return d}},set(k,v){try{sessionStorage.setItem(k,JSON.stringify(v))}catch{}}};
+let CFG=null,busy=0;
+/* 呼叫後端：網路失敗自動重試 */
+async function api(a,data={},tries=4){
+  for(let i=0;;i++){
+    try{
+      const r=await fetch(window.API_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({a,...data})});
+      const j=await r.json();if(j.ok)return j.d;
+      const e=new Error(j.m);e.user=!j.retry;e.code=j.c;throw e;
+    }catch(e){if(e.user||i>=tries-1){if(!e.user)e.message='連線不穩，請確認網路後再試。';throw e}await sleep(800*2**i*(.7+Math.random()*.6))}
+  }
+}
+function fakeCfg(){return{state:'未開放',deadline:'116年3月中（依公文）',stats:{total:0,g:{},time:''},schools:{國小:[],國中:[]},links:[],contact:'',privacy:'',pageLimit:6,offline:1}}
+async function load(){try{if(!window.API_URL)throw 0;CFG=await api('config')}catch{CFG=fakeCfg()}$('#contact').textContent=CFG.contact||'';}
+/* ---------- 首頁 ---------- */
+function pile(n,anim){const c=n?Math.min(22,Math.max(1,Math.round(n<=12?n:12+(n-12)/3))):0;let h='';const step=matchMedia('(max-width:860px)').matches?3.6:4.8;
+  for(let i=0;i<c;i++)h+=`<span class="sheet ${anim?'in':''}" style="bottom:${(i*step).toFixed(1)}px;--r:${(((i*37)%7)-3)*.55}deg;--d:${i*35}ms"></span>`;return h}
+function row(l){const open=CFG.state==='收件中';return `<div class="row"><h2>${l}</h2>${D.map(d=>{const n=CFG.stats.g[l+d]||0;return `<button class="stack" ${open?'':'disabled'} data-g="${l}|${d}" aria-label="${l}${d}，目前 ${n} 件${open?'，點選投稿':''}"><span class="pile" aria-hidden="true">${pile(n,1)}</span><span class="lab">${d}<span><span class="num">${n}</span><i> 件</i></span></span></button>`}).join('')}</div>`}
+function home(){
+  const s=CFG.stats,open=CFG.state==='收件中',fix=CFG.state==='已截止'&&CFG.supplement;
+  const st=CFG.offline?'目前無法連線，請稍後重新整理。':open?'收件中':fix?'已截止，僅開放補件':CFG.state==='已截止'?'已截止收件':'尚未開放';
+  $('#app').innerHTML=`<section class="hero"><div class="wrap head"><div><h1><span>新竹縣115學年度</span>素養導向多元評量徵稿</h1>
+  <p>國小、國中各五個領域。每一件作品，都是這裡的一張稿紙。</p>${open?'<a class="btn" href="#/submit">前往投稿</a> ':''}<a class="btn sec" href="#/fix">補件查詢</a></div>
+  <div class="total" aria-live="polite"><div class="num">${s.total}</div><small>件已完成收件${s.time?'<br>更新 '+esc(s.time.slice(5,16)):''}</small></div></div>
+  <div class="desk"><div class="wrap">${LV.map(row).join('')}</div></div></section>
+  <div class="wrap facts"><div><span class="num">${esc(CFG.deadline)}</span>收件截止</div><div><span class="num">${st}</span>目前狀態</div><div><span class="num">四個檔案</span>每件作品都要備齊</div></div>
+  <div class="wrap"><section class="sec2"><h2>投稿步驟</h2><ol class="steps"><li><div><b>填上傳者資料</b>可由作者本人，或教學組長代全校老師上傳，只填一次。</div></li><li><div><b>填作品與作者</b>作者才是獲獎人，請逐位填寫學校與姓名。</div></li><li><div><b>逐一上傳四個檔案</b>看得到進度；斷線會自動接續，不用重來。</div></li><li><div><b>確認送出，保存收件編號</b>完成後寄確認信給上傳者。</div></li></ol></section>
+  <section class="sec2"><h2>應備檔案</h2><div><table class="t"><thead><tr><th>檔案</th><th>格式</th><th>注意</th></tr></thead><tbody>${Object.values(K).map(k=>`<tr><td><b>${k[0].replace(/（.*/,'')}</b></td><td>${k[1].replace(/\./g,'').toUpperCase().replace(/,/g,'、')}</td><td>${k[2]}</td></tr>`).join('')}</tbody></table><p>單檔上限 50MB。${CFG.links.length?'表件下載：'+CFG.links.map(x=>`<a href="${/^https:/.test(x.u)?esc(x.u):'#'}" target="_blank" rel="noopener">${esc(x.n)}</a>`).join('、'):''}</p></div></section>
+  <section class="sec2"><h2>常見問題</h2><div><details><summary>我是教學組長，要幫好幾位老師上傳</summary><p>上傳者填您自己，每件作品的作者填老師本人。送出一件後按「再新增一件」，您的資料會留著，作者與檔案會清空。</p></details><details><summary>上傳到一半斷線了</summary><p>網路恢復後會自動從中斷處接續。若已關閉網頁，請用「補件查詢」重新驗證後補傳。</p></details><details><summary>送出後想換檔或改作者</summary><p>用「補件查詢」輸入上傳者電子郵件與收件編號，收驗證碼後即可修改，舊檔會保留備查。</p></details><details><summary>評審會看到姓名和學校嗎</summary><p>不會。收件截止後由承辦單位去識別化並重新編號，評審只看得到審查編號。</p></details></div></section></div>`;
+}
+/* ---------- 投稿 ---------- */
+const blank=()=>({work:{level:'',domain:'',grade:'',title:''},authors:[{}],self:false,req:uid(),made:null,files:{}});
+let UPL=store.get('upl',{}),CUR=store.get('cur',null)||blank(),LIST=store.get('list',[]),PEND={};
+const save=()=>{store.set('upl',UPL);store.set('cur',CUR);store.set('list',LIST)};
+const opt=(L,v,ph)=>`<option value="">${ph}</option>`+L.map(x=>`<option ${x===v?'selected':''}>${esc(x)}</option>`).join('');
+function school(id,v,lv,req=1){const L=lv?CFG.schools[lv]||[]:null,all=L||[...(CFG.schools.國小||[]),...(CFG.schools.國中||[])],other=v&&!all.includes(v);
+  const og=L?L.map(x=>`<option ${x===v?'selected':''}>${esc(x)}</option>`).join(''):LV.map(l=>`<optgroup label="${l}">${(CFG.schools[l]||[]).map(x=>`<option ${x===v?'selected':''}>${esc(x)}</option>`).join('')}</optgroup>`).join('');
+  return `<label class="f">學校 ${req?'<em>必填</em>':''}<select data-k="${id}" data-school><option value="">請選擇</option>${og}<option value="__" ${other?'selected':''}>其他（自行輸入）</option></select></label>${other||v===' '?`<label class="f">學校名稱<input data-k="${id}" value="${esc(v.trim())}"></label>`:''}`}
+const inp=(k,l,v,a='',r=1)=>`<label class="f">${l} ${r?'<em>必填</em>':''}<input data-k="${k}" value="${esc(v)}" ${a}></label>`;
+function authorsHtml(au,lv,self){return au.map((a,i)=>`<div class="author"><header><span>${i?'共同作者 '+i:'第一作者'}</span>${i?`<button type="button" class="link" data-rm="${i}">移除</button>`:''}</header><div class="g">${inp(`authors.${i}.name`,'姓名',a.name,self&&!i?'readonly':'')}${school(`authors.${i}.school`,a.school,lv)}${inp(`authors.${i}.title`,'職稱',a.title,'',0)}${inp(`authors.${i}.email`,'電子郵件（想收到通知才填）',a.email,'type="email"',0)}</div></div>`).join('')+`<button type="button" class="btn sec sm" data-add>新增共同作者</button>`}
+function side(){return `<aside><h2>本次上傳清單</h2>${LIST.length?`<ol>${LIST.map(x=>`<li><span class="st ${x.done?'ok':'bad'}">${x.done?'已完成':'未完成'}</span><b>${esc(x.id)}</b><br>${esc(x.group)}　${esc(x.author)}<br>${esc(x.title)}${!x.done&&(!CUR.made||CUR.made.id!==x.id)?`<br><button class="link" data-resume="${esc(x.id)}">繼續上傳</button>`:''}</li>`).join('')}</ol>${LIST.some(x=>x.done&&!x.mailed)?'<button class="btn sm" data-allsent>全部送完，寄確認信</button>':''}`:'<p>送出後會列在這裡。</p>'}</aside>`}
+function submit(){
+  if(CFG.state!=='收件中'){$('#app').innerHTML=`<div class="page"><div class="wrap"><h1>${CFG.state==='已截止'?'收件已截止':'尚未開放投稿'}</h1><p>${CFG.offline?'目前無法連線，請稍後重新整理。':'收件截止：'+esc(CFG.deadline)}</p></div></div>`;return}
+  const c=CUR,w=c.work;
+  $('#app').innerHTML=`<div class="page"><div class="wrap"><h1>${c.made?'上傳檔案':'我要投稿'}</h1><div class="cols"><div>${c.made?filesHtml():`<form novalidate>
+  <fieldset><legend>上傳者（只填一次）</legend><div class="g">${inp('upl.name','姓名',UPL.name,'autocomplete="name"')}${inp('upl.email','電子郵件',UPL.email,'type="email" autocomplete="email"')}${school('upl.school',UPL.school)}${inp('upl.title','職稱',UPL.title,'',0)}${inp('upl.phone','電話',UPL.phone,'type="tel" autocomplete="tel"')}</div></fieldset>
+  <fieldset><legend>作品</legend><div class="g"><label class="f">學制 <em>必填</em><select data-k="work.level">${opt(LV,w.level,'請選擇')}</select></label><label class="f">領域 <em>必填</em><select data-k="work.domain">${opt(D,w.domain,'請選擇')}</select></label><label class="f">適用年級 <em>必填</em><select data-k="work.grade">${opt(w.level==='國中'?['七年級','八年級','九年級','跨年級']:['一年級','二年級','三年級','四年級','五年級','六年級','跨年級'],w.grade,'請選擇')}</select></label><div class="f1">${inp('work.title','作品名稱',w.title,'maxlength="80"')}</div></div></fieldset>
+  <fieldset><legend>作者（獲獎人）</legend><label class="ck"><input type="checkbox" data-self ${c.self?'checked':''}>上傳者就是第一作者</label>${authorsHtml(c.authors,w.level,c.self)}</fieldset>
+  <fieldset><legend>確認</legend><p>${esc(CFG.privacy)}</p><label class="ck"><input type="checkbox" id="consent">我已閱讀個資告知，並已取得所有作者同意。</label><p class="err" role="alert" hidden></p><button class="btn">下一步，上傳檔案</button></fieldset></form>`}</div>${side()}</div></div></div>`;
+}
+function filesHtml(){const m=CUR.made,all=Object.keys(K).every(k=>CUR.files[k]?.ok);
+  return `<p>收件編號（請記下）</p><div class="idno">${esc(m.id)}</div><p>${esc(CUR.work.level+CUR.work.domain)}　${esc(CUR.work.title)}　作者 ${esc(CUR.authors.map(a=>a.name).join('、'))}</p>${(m.warn||[]).map(x=>`<p class="warn">${esc(x)}</p>`).join('')}
+  <fieldset style="margin-top:24px"><legend>四個檔案</legend>${fileRows(CUR.files)}</fieldset><p class="err" role="alert" hidden></p>${m.done?`<p class="ok" style="font-size:22px">這件已完成收件。</p><button class="btn" data-next>再新增一件</button> ${LIST.some(x=>x.done&&!x.mailed)?'<button class="btn sec" data-allsent>全部送完，寄確認信</button>':''}`:`<button class="btn" data-finish ${all?'':'disabled'}>確認送出</button>`}`}
+function fileRows(F){return Object.entries(K).map(([k,v])=>{const f=F[k]||{};return `<div class="file" data-kind="${k}"><div><b>${v[0]}</b><small>${f.ok?'<span class="ok">已存入雲端</span>　'+esc(f.name):v[2]}</small></div><label><input type="file" accept="${v[1]}" data-file="${k}"><span class="btn sec sm">${f.ok?'換檔':'選擇檔案'}</span></label><div class="bar" hidden role="progressbar" aria-label="${v[0]}上傳進度" aria-valuemin="0" aria-valuemax="100"><i></i></div><div class="msg" aria-live="polite"></div></div>`}).join('')}
+/* ---------- 檔案檢查 ---------- */
+let pdfjs;function loadPdf(){return pdfjs||(pdfjs=new Promise((ok,no)=>{const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';s.onload=()=>{window.pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';ok(window.pdfjsLib)};s.onerror=()=>{pdfjs=null;no(new Error('cdn'))};document.head.append(s)}))}
+async function check(kind,f){
+  const ext=f.name.split('.').pop().toLowerCase(),allow=K[kind][1].split(',').map(x=>x.slice(1));
+  if(!allow.includes(ext))throw new Error('這一格請選 '+allow.join('、')+' 檔，您選的是 .'+ext+'。');
+  if(!f.size)throw new Error('這是空白檔案，請重新選擇。若檔案在雲端硬碟，請先下載到電腦。');
+  if(f.size>50*1048576)throw new Error('檔案 '+(f.size/1048576).toFixed(1)+'MB，超過 50MB，請壓縮後再上傳。');
+  const h=new Uint8Array(await f.slice(0,1024).arrayBuffer()),sig=String.fromCharCode(...h.slice(0,4));
+  if(ext==='pdf'&&!String.fromCharCode(...h).includes('%PDF'))throw new Error('這個檔案不是有效的 PDF，請用 Word「另存為 PDF」重新產生。');
+  if((ext==='docx'||ext==='odt')&&sig!=='PK\x03\x04')throw new Error('這個文件可能已損壞或設有密碼，請重新存檔。');
+  const r={pages:0,warn:[]};
+  if(ext==='pdf'){let lib;try{lib=await loadPdf()}catch{return r}
+    try{const doc=await lib.getDocument({data:await f.arrayBuffer(),cMapUrl:'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/cmaps/',cMapPacked:true}).promise;r.pages=doc.numPages;
+      if(kind==='pdf'){if(r.pages>CFG.pageLimit)r.warn.push(`共 ${r.pages} 頁，超過 ${CFG.pageLimit} 頁，仍可上傳。`);
+        const bad=[];for(let i=1;i<=Math.min(r.pages,40);i++){const t=(await (await doc.getPage(i)).getTextContent()).items.map(x=>x.str).join('').replace(/\s/g,'').normalize('NFKC');if(/作品授權書|智慧財產(權)?切結書|授權人簽|立書人|立切結書|身分證字號|出生年月日|校內初[選審]/.test(t))bad.push(i)}
+        if(bad.length){r.form=1;r.warn.push(`第 ${bad.join('、')} 頁看起來是授權書、切結書或簽核頁，會洩漏個資。請移除後再上傳。`)}}
+      doc.destroy()}catch(e){if(e?.name==='PasswordException')throw new Error('這個 PDF 設有密碼，請移除密碼後再上傳。');throw new Error('這個 PDF 無法開啟，可能已損壞，請重新產生。')}}
+  return r}
+function md5(u){var K=[],R=[7,12,17,22,5,9,14,20,4,11,16,23,6,10,15,21];for(var i=0;i<64;i++)K[i]=Math.floor(Math.abs(Math.sin(i+1))*4294967296)|0;var n=u.length,N=((n+8>>6)+1)*64,p=new Uint8Array(N);p.set(u);p[n]=128;var dv=new DataView(p.buffer);dv.setUint32(N-8,n*8>>>0,true);dv.setUint32(N-4,Math.floor(n/536870912),true);var a0=0x67452301,b0=0xefcdab89|0,c0=0x98badcfe|0,d0=0x10325476,w=new Int32Array(16);for(var o=0;o<N;o+=64){for(i=0;i<16;i++)w[i]=dv.getInt32(o+i*4,true);var a=a0,b=b0,c=c0,d=d0;for(i=0;i<64;i++){var f,g,q=i>>4;if(q==0){f=b&c|~b&d;g=i}else if(q==1){f=d&b|~d&c;g=(5*i+1)&15}else if(q==2){f=b^c^d;g=(3*i+5)&15}else{f=c^(b|~d);g=(7*i)&15}f=f+a+K[i]+w[g]|0;a=d;d=c;c=b;var s=R[q*4+(i&3)];b=b+(f<<s|f>>>32-s)|0}a0=a0+a|0;b0=b0+b|0;c0=c0+c|0;d0=d0+d|0}return[a0,b0,c0,d0].map(x=>[0,8,16,24].map(s=>(x>>>s&255).toString(16).padStart(2,'0')).join('')).join('')}
+/* ---------- 上傳：先由瀏覽器直送雲端，被擋就改經後端中轉；失敗先問雲端收到哪裡 ---------- */
+const b64=b=>new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>ok(r.result.split(',')[1]||'');r.onerror=()=>no(Object.assign(new Error('檔案讀取失敗，請重新選擇。'),{user:1}));r.readAsDataURL(b)});
+function put(url,blob,a,total,prog){return new Promise((ok,no)=>{const x=new XMLHttpRequest();x.open('PUT',url);x.setRequestHeader('Content-Range',`bytes ${a}-${a+blob.size-1}/${total}`);x.upload.onprogress=e=>prog(a+e.loaded);x.timeout=180000;
+  x.onload=()=>{if(x.status===200||x.status===201)ok({done:1});else if(x.status===308){const g=x.getResponseHeader('Range');ok({next:g?+g.split('-')[1]+1:null})}else no(Object.assign(new Error('HTTP '+x.status),{gone:x.status===404||x.status===410}))};x.onerror=x.ontimeout=()=>no(new Error('net'));x.send(blob)})}
+async function upload(auth,kind,f,pages,prog){
+  let j=await api('begin',{...auth,kind,name:f.name,size:f.size,pages,origin:location.origin}),pos=0,fails=0,direct=store.get('relay',0)?0:1,worked=0,done=0;
+  while(!done){
+    try{
+      const seg=direct?8*1048576:4*1048576,part=f.slice(pos,pos+seg);
+      if(direct){const r=await put(j.url,part,pos,f.size,prog);worked=1;fails=0;if(r.done)done=1;else if(r.next==null){const s=await api('status',{...auth,up:j.up});if(s.done)done=1;else pos=s.next}else pos=r.next}
+      else{const r=await api('chunk',{...auth,up:j.up,start:pos,b64:await b64(part)},1);fails=0;if(r.done)done=1;else pos=r.next;prog(pos)}
+    }catch(e){
+      if(e.user)throw e;fails++;
+      if(direct&&!worked&&fails>=2){direct=0;fails=0;store.set('relay',1)}
+      if(fails>8)throw new Error('網路一直中斷，請確認連線後再按一次「選擇檔案」。');
+      if(!navigator.onLine)await new Promise(r=>{addEventListener('online',r,{once:true});setTimeout(r,60000)});
+      await sleep(Math.min(15000,700*2**fails)*(.7+Math.random()*.6));
+      try{const s=await api('status',{...auth,up:j.up},2);if(s.done)done=1;else pos=s.next}catch(x){if(x.user)throw x}
+    }
+    prog(done?f.size:pos)
+  }
+  const s=await api('status',{...auth,up:j.up});if(!s.done)throw new Error('雲端尚未確認收到，請再試一次。');
+  if(s.md5&&s.md5!==md5(new Uint8Array(await f.arrayBuffer())))throw new Error('檔案內容比對不符，請重新上傳。');
+}
+async function takeFile(kind,f,box,auth,F,done,force){
+  const msg=$('.msg',box),bar=$('.bar',box),say=(t,c='')=>{msg.className='msg '+c;msg.innerHTML=t};
+  say('檢查檔案中');
+  let r;try{r=await check(kind,f)}catch(e){say(esc(e.message),'bad');return}
+  if(r.form&&!force){say(`<div class="warn">${r.warn.map(esc).join('<br>')}</div><button class="link" data-force>確認沒有問題，仍要上傳</button>`);$('[data-force]',msg).onclick=()=>takeFile(kind,f,box,auth,F,done,1);return}
+  busy++;bar.hidden=false;const t0=Date.now(),w=r.warn.map(x=>`<div class="warn">${esc(x)}</div>`).join('');
+  try{await upload(auth,kind,f,r.pages,p=>{const q=Math.min(100,Math.round(p/f.size*100)),left=p>f.size*.1?Math.round((Date.now()-t0)/p*(f.size-p)/1000):0;$('i',bar).style.width=q+'%';bar.setAttribute('aria-valuenow',q);say(w+`上傳中 ${q}%${left>2?'，約剩 '+left+' 秒':''}`)});
+    F[kind]={ok:1,name:f.name};busy--;done()}
+  catch(e){busy--;say(w+esc(e.message),'bad')}
+}
+addEventListener('beforeunload',e=>{if(busy)e.preventDefault()});
+/* ---------- 補件 ---------- */
+let FIX=store.get('fix',null),EDIT=null;
+async function fix(){
+  if(!FIX?.sess){$('#app').innerHTML=`<div class="page"><div class="wrap" style="max-width:640px"><h1>補件查詢</h1><p>輸入上傳者的電子郵件，以及任一件作品的收件編號。</p><form id="otp" novalidate><div class="g"><label class="f f1">電子郵件<input name="email" type="email" autocomplete="email"></label><label class="f f1">收件編號<input name="no" placeholder="115-XXXXX" autocapitalize="characters"></label></div><p class="err" role="alert" hidden></p><p><button class="btn">寄驗證碼</button></p></form><form id="ver" hidden novalidate><p class="note">若資料相符，驗證碼已寄到您的信箱，10 分鐘內有效。</p><label class="f">驗證碼<input name="code" inputmode="numeric" maxlength="6" autocomplete="one-time-code"></label><p class="err" role="alert" hidden></p><p><button class="btn">確認</button></p></form></div></div>`;return}
+  $('#app').innerHTML='<div class="page"><div class="wrap"><h1>我的作品</h1><p>讀取中</p></div></div>';
+  try{FIX.works=(await api('works',{sess:FIX.sess})).works}catch(e){if(e.code==='AUTH'){FIX=null;store.set('fix',null);return fix()}$('#app').innerHTML=`<div class="page"><div class="wrap"><p class="err">${esc(e.message)}</p></div></div>`;return}
+  fixList();
+}
+function fixList(){$('#app').innerHTML=`<div class="page"><div class="wrap"><h1>我的作品</h1><p>共 ${FIX.works.length} 件。<button class="link" data-out>登出</button></p>${FIX.works.map((w,i)=>`<fieldset data-w="${i}"><legend>${esc(w.id)}　${esc(w.title)}</legend><p>${esc(w.level+w.domain)}　<span class="${w.status==='已完成'?'ok':'bad'}">${esc(w.status)}</span>　作者：${esc(w.authors.map(a=>a.school+' '+a.name).join('、'))} <button class="link" data-edit="${i}">修正作者</button></p>${EDIT&&EDIT.i===i?`<form data-ea>${authorsHtml(EDIT.authors,w.level,0)} <button class="btn sm">儲存作者</button><p class="err" role="alert" hidden></p></form>`:''}${fileRows(Object.fromEntries(Object.entries(w.files).map(([k,n])=>[k,n?{ok:1,name:n}:{}])))}<p class="err" role="alert" hidden></p>${w.status!=='已完成'?`<button class="btn" data-ffin="${i}">確認送出</button>`:''}</fieldset>`).join('')}</div></div>`}
+/* ---------- 事件 ---------- */
+const route=()=>{const p=location.hash.replace(/^#\/?/,'').split('?')[0];document.body.className=p?'':'home';document.querySelectorAll('nav a').forEach(a=>a.getAttribute('href')===('#/'+p)?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));({submit,fix}[p]||home)();scrollTo(0,0)};
+const showErr=(root,m,html)=>{const e=$('.err',root);if(!e)return;e.hidden=!m;if(html)e.innerHTML=m;else e.textContent=m};
+function setK(k,v){const p=k.split('.');if(p[0]==='upl'){UPL[p[1]]=v;if(CUR.self)syncSelf()}else if(p[0]==='work')CUR.work[p[1]]=v;else (EDIT||CUR).authors[p[1]][p[2]]=v;save()}
+function syncSelf(){Object.assign(CUR.authors[0],{name:UPL.name||'',school:UPL.school||'',title:UPL.title||'',email:''})}
+addEventListener('input',e=>{const k=e.target.dataset?.k;if(k&&e.target.tagName==='INPUT'){setK(k,e.target.value);e.target.removeAttribute('aria-invalid')}});
+addEventListener('change',async e=>{const t=e.target,k=t.dataset?.k;
+  if(k&&t.tagName==='SELECT'){setK(k,t.value==='__'?' ':t.value);if(k==='work.level'){CUR.work.grade='';CUR.authors.forEach(a=>{if(!CUR.self)a.school=''});save();submit()}else if(t.dataset.school!==undefined)EDIT?fixList():submit()}
+  if(t.dataset?.self!==undefined){CUR.self=t.checked;if(t.checked)syncSelf();else CUR.authors[0]={};save();submit()}
+  if(t.dataset?.file){const f=t.files[0],kind=t.dataset.file,box=t.closest('.file'),fs=t.closest('[data-w]');t.value='';if(!f)return;
+    if(fs){const w=FIX.works[fs.dataset.w];takeFile(kind,f,box,{id:w.id,sess:FIX.sess},{},()=>{w.files[kind]=f.name;if(busy)markOk(box,f.name);else fixList()})}
+    else{const cur=CUR;takeFile(kind,f,box,{id:cur.made.id,token:cur.made.token},cur.files,()=>{save();if(busy)markOk(box,f.name);else if(cur===CUR)submit()})}}
+});
+function markOk(box,n){$('small',box).innerHTML='<span class="ok">已存入雲端</span>　'+esc(n);$('.bar',box).hidden=true;$('.msg',box).textContent=''}
+addEventListener('click',async e=>{const t=e.target.closest('button');if(!t)return;const d=t.dataset;
+  if(d.g){const[l,x]=d.g.split('|');if(!CUR.made){CUR.work.level=l;CUR.work.domain=x;save()}location.hash='#/submit'}
+  const A=EDIT||CUR,draw=()=>EDIT?fixList():submit();
+  if(d.add!==undefined){if(A.authors.length<10)A.authors.push({});save();draw()}
+  if(d.rm){A.authors.splice(+d.rm,1);save();draw()}
+  if(d.next!==undefined){CUR=blank();save();submit();scrollTo(0,0)}
+  if(d.resume){const x=LIST.find(y=>y.id===d.resume);if(x&&!busy){CUR=x.cur;save();submit()}}
+  if(d.finish!==undefined){t.disabled=true;try{await api('finish',{id:CUR.made.id,token:CUR.made.token});CUR.made.done=1;const x=LIST.find(y=>y.id===CUR.made.id);if(x){x.done=1;x.cur=null}save();submit()}catch(er){t.disabled=false;showErr($('#app'),er.message)}}
+  if(d.allsent!==undefined){t.disabled=true;try{const x=LIST.find(y=>y.done&&!y.mailed);await api('notify',{id:x.id,token:x.token});LIST.forEach(y=>{if(y.done)y.mailed=1});save();submit()}catch(er){t.disabled=false;alert(er.message)}}
+  if(d.out!==undefined){FIX=null;EDIT=null;store.set('fix',null);fix()}
+  if(d.edit){EDIT={i:+d.edit,authors:FIX.works[d.edit].authors.map(a=>({...a}))};fixList()}
+  if(d.ffin){const w=FIX.works[d.ffin];t.disabled=true;try{await api('finish',{id:w.id,sess:FIX.sess});w.status='已完成';fixList()}catch(er){t.disabled=false;showErr(t.closest('fieldset'),er.message)}}
+  if(d.dup!==undefined)doCreate(t.closest('form'),1);
+});
+async function doCreate(f,force){
+  const btn=$('button.btn:not([data-add])',f);let bad=null;f.querySelectorAll('[data-k]').forEach(i=>{const need=i.closest('label').querySelector('em')||i.closest('label').textContent.startsWith('學校名稱'),no=need&&!i.value.trim();i.setAttribute('aria-invalid',!!no);if(no&&!bad)bad=i});
+  if(bad){showErr(f,'還有必填欄位沒填。');bad.focus();return}
+  if(!$('#consent').checked){showErr(f,'請先勾選同意。');return}
+  btn.disabled=true;showErr(f,'');
+  try{const clean=o=>Object.fromEntries(Object.entries(o).map(([k,v])=>[k,String(v||'').trim()]));
+    const r=await api('create',{uploader:clean(UPL),work:clean(CUR.work),authors:CUR.authors.map(clean),consent:true,req:CUR.req,force:!!force});
+    CUR.made=r;LIST.push({id:r.id,token:r.token,group:CUR.work.level+CUR.work.domain,author:CUR.authors.map(a=>a.name).join('、'),title:CUR.work.title,done:0,cur:CUR});save();submit();scrollTo(0,0)}
+  catch(e){btn.disabled=false;if(e.code==='DUP')showErr(f,esc(e.message)+' <button type="button" class="link" data-dup>仍要新增</button>',1);else showErr(f,e.message)}
+}
+addEventListener('submit',async e=>{e.preventDefault();const f=e.target;
+  if(f.dataset.ea!==undefined){try{const w=FIX.works[EDIT.i];await api('editAuthors',{id:w.id,sess:FIX.sess,authors:EDIT.authors});w.authors=EDIT.authors;EDIT=null;fixList()}catch(er){showErr(f,er.message)}return}
+  if(f.id==='otp'){const b=$('button',f);b.disabled=true;try{FIX={email:f.email.value.trim()};await api('otp',{email:FIX.email,id:f.elements.no.value.trim()});f.hidden=true;$('#ver').hidden=false;$('#ver').code.focus()}catch(er){b.disabled=false;showErr(f,er.message)}return}
+  if(f.id==='ver'){try{const r=await api('verify',{email:FIX.email,code:f.code.value.trim()});FIX={sess:r.sess,works:r.works};store.set('fix',{sess:r.sess});fixList()}catch(er){showErr(f,er.message)}return}
+  doCreate(f);
+});
+addEventListener('hashchange',route);
+$('#app').innerHTML='<div class="page"><div class="wrap"><p>載入中</p></div></div>';
+load().then(()=>{route();setInterval(async()=>{if(document.hidden||location.hash.replace(/^#\/?/,'')||!window.API_URL)return;try{const s=await api('stats',{},1);if(s.total!==CFG.stats.total){CFG.stats=s;home()}}catch{}},60000)});
+</script>
+</body>
+</html>
